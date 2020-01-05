@@ -1,0 +1,43 @@
+Source: boxfort
+Section: libs
+Priority: optional
+Maintainer: SZALAY Attila <sasa@debian.org>
+Standards-Version: 4.4.1
+Build-Depends: debhelper (>= 12),
+               meson
+
+Package: libboxfort
+Section: libs
+Architecture: any
+Multi-Arch: no
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: simple, cross-platform sandboxing C library powering Criterion
+ BoxFort provides a simple API to run user code in isolated processes.
+ .
+ Although BoxFort provides some kind of security of the parent process from
+ spawned sandboxes, a sandbox has by default the same system permissions and
+ access than its parent, and is hence, without care, ill-fitted for security
+ purposes.
+ .
+ The main goal of this project is not security, but portable code isolation
+ -- if you want complete system isolation, consider using properly configured
+ containers.
+
+Package: libboxfort-dev
+Section: libdevel
+Architecture: any
+Depends: ${misc:Depends}, libboxfort (= ${binary:Version})
+Description: development file for BoxFort
+ BoxFort provides a simple API to run user code in isolated processes.
+ .
+ Although BoxFort provides some kind of security of the parent process from
+ spawned sandboxes, a sandbox has by default the same system permissions and
+ access than its parent, and is hence, without care, ill-fitted for security
+ purposes.
+ .
+ The main goal of this project is not security, but portable code isolation
+ -- if you want complete system isolation, consider using properly configured
+ containers.
+ .
+ This package contains the header files required to compile a package against
+ BoxFort.
