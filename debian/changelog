@@ -1,0 +1,6 @@
+boxfort (0.0.0-git20200105-3e16c0a-1) unstable; urgency=medium
+
+  * [404528e] New upstream version 0.0.0-git20200105-3e16c0a
+  * [b6a0c5b] Initial debianization (Closes: #948216)
+
+ -- SZALAY Attila <sasa@debian.org>  Sun, 05 Jan 2020 14:23:26 +0100
