@@ -1,3 +1,14 @@
+boxfort (0.0.0-git20200105-3e16c0a-2) unstable; urgency=medium
+
+  * [f78f302] Replace arch specific path part with * in *.install
+    so it can pick up libboxfort.a on every architecture
+  * [ae4b3f4] Bumped policy version to 4.5.0
+  * [473b84f] Added python3-cram to build-dep
+    cram is an optional tool the package can use for testing purposes.
+  * [0918667] Add cram3 as valid cram implementation
+
+ -- SZALAY Attila <sasa@debian.org>  Sat, 25 Jan 2020 20:32:18 +0100
+
 boxfort (0.0.0-git20200105-3e16c0a-1) unstable; urgency=medium
 
   * [404528e] New upstream version 0.0.0-git20200105-3e16c0a
