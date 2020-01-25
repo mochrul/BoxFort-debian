@@ -1,3 +1,14 @@
+boxfort (0.0.0-git20200105-3e16c0a-3) unstable; urgency=medium
+
+  * [9b8a39f] Narrow down the architectures to where the might compile.
+    The upstream has a short list which is supported.
+    Removing all architectures which is explicitly unsupported creates less
+    noises on the build hosts. There are still architectures, which is
+    theoretically supported, but the tests fails. But I'm keeping that
+    architectures in the list now and I'm going to try fixing them.
+
+ -- SZALAY Attila <sasa@debian.org>  Sun, 26 Jan 2020 00:19:36 +0100
+
 boxfort (0.0.0-git20200105-3e16c0a-2) unstable; urgency=medium
 
   * [f78f302] Replace arch specific path part with * in *.install
