@@ -9,7 +9,7 @@ Build-Depends: debhelper (>= 12),
 
 Package: libboxfort
 Section: libs
-Architecture: any
+Architecture: amd64 arm64 armel armhf i386 hurd-i386 kfreebsd-amd64 kfreebsd-i386 x32
 Multi-Arch: no
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: simple, cross-platform sandboxing C library powering Criterion
