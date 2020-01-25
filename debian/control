@@ -4,7 +4,8 @@ Priority: optional
 Maintainer: SZALAY Attila <sasa@debian.org>
 Standards-Version: 4.5.0
 Build-Depends: debhelper (>= 12),
-               meson
+               meson,
+               python3-cram
 
 Package: libboxfort
 Section: libs
