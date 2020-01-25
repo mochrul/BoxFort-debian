@@ -1,0 +1,19 @@
+From: SZALAY Attila <sasa@ubainba.hu>
+Date: Sat, 25 Jan 2020 18:11:22 +0100
+Subject: Search for cram as cram3
+
+---
+ test/meson.build | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/test/meson.build b/test/meson.build
+index eac326a..ec2909f 100644
+--- a/test/meson.build
++++ b/test/meson.build
+@@ -1,5 +1,5 @@
+ sh   = find_program('sh', required: false)
+-cram = find_program('cram', required: false)
++cram = find_program('cram', 'cram3', required: false)
+ if sh.found() and cram.found()
+ 	env = environment()
+ 	env.prepend('PATH',
