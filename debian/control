@@ -27,7 +27,7 @@ Description: simple, cross-platform sandboxing C library powering Criterion
 Package: libboxfort-dev
 Section: libdevel
 Architecture: amd64 arm64 armel armhf i386 hurd-i386 kfreebsd-amd64 kfreebsd-i386 x32
-Depends: ${misc:Depends}, libboxfort (= ${binary:Version})
+Depends: ${misc:Depends}, libboxfort (= ${binary:Version}), pkg-config
 Description: development file for BoxFort
  BoxFort provides a simple API to run user code in isolated processes.
  .

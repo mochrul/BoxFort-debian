@@ -1,0 +1,30 @@
+#!/bin/sh
+# autopkgtest check: Build and run a program against BoxFort, to verify that the
+# headers and pkg-config file are installed correctly.
+
+set -e
+
+WORKDIR=$(mktemp -d)
+trap "rm -rf $WORKDIR" 0 INT QUIT ABRT PIPE TERM
+cd $WORKDIR
+cat <<EOF > boxforttest.c
+#include <stdlib.h>
+#include "boxfort.h"
+
+#define _assert(Cond) do { if (!(Cond)) abort(); } while (0)
+
+int main()
+{
+    bxf_context ctx;
+    _assert(!bxf_context_init(&ctx));
+
+    _assert(!bxf_context_term(ctx));
+    return 0;
+}
+EOF
+
+gcc -o boxforttest boxforttest.c `pkg-config --cflags --libs boxfort`
+echo "build: OK"
+[ -x boxforttest ]
+./boxforttest
+echo "run: OK"
