@@ -1,3 +1,9 @@
+boxfort (0.0.0-git20200105-3e16c0a-4) unstable; urgency=medium
+
+  * [677280c] Compile sample code with -marm on arm architecture
+
+ -- SZALAY Attila <sasa@debian.org>  Fri, 31 Jan 2020 18:54:32 +0100
+
 boxfort (0.0.0-git20200105-3e16c0a-3) unstable; urgency=medium
 
   * [9b8a39f] Narrow down the architectures to where the might compile.
