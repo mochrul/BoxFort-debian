@@ -1,0 +1,25 @@
+From: SZALAY Attila <sasa@ubainba.hu>
+Date: Fri, 31 Jan 2020 18:46:00 +0100
+Subject: Add -marm option when compiling sample code
+
+On arm processor the -marm option is required as without this the main
+function might use thumb opcode (16 bit) instead of the 32 bit arm code
+which makes the 32 bit trampoline code invalid. This issue also affects the
+sample code and as the sample code is running on compile time as tests, this
+option should be enabled there too.
+---
+ sample/meson.build | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/sample/meson.build b/sample/meson.build
+index e0a358d..ca390af 100644
+--- a/sample/meson.build
++++ b/sample/meson.build
+@@ -13,6 +13,7 @@ foreach sample : samples
+ 			c_args: [
+ 				cc.get_supported_arguments([
+ 					'-fvisibility=default',
++                                        '-marm',
+ 				])
+ 			])
+ 	test(sample, e)
