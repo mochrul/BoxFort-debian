@@ -1,3 +1,14 @@
+boxfort (0.0.0-git20200808-ac0507b-1) unstable; urgency=medium
+
+  * [df4b650] New upstream version 0.0.0-git20200808-ac0507b
+  * [fad40ed] Move the .a file to the dev packages as the policy mandates.
+    And as the lib package is empty with this change, the lib package is not
+    built any more.
+  * [26e58a5] Add Vcs fields
+  * [c0b0866] Remove patch already applied upstream
+
+ -- SZALAY Attila <sasa@debian.org>  Sat, 08 Aug 2020 18:05:21 +0200
+
 boxfort (0.0.0-git20200105-3e16c0a-6) unstable; urgency=medium
 
   * [3344a95] Added autopkgtest config.
