@@ -7,27 +7,12 @@ Build-Depends: debhelper (>= 12),
                meson,
                python3-cram
 
-Package: libboxfort
-Section: libs
-Architecture: amd64 arm64 armel armhf i386 hurd-i386 kfreebsd-amd64 kfreebsd-i386 x32
-Multi-Arch: no
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: simple, cross-platform sandboxing C library powering Criterion
- BoxFort provides a simple API to run user code in isolated processes.
- .
- Although BoxFort provides some kind of security of the parent process from
- spawned sandboxes, a sandbox has by default the same system permissions and
- access than its parent, and is hence, without care, ill-fitted for security
- purposes.
- .
- The main goal of this project is not security, but portable code isolation
- -- if you want complete system isolation, consider using properly configured
- containers.
-
 Package: libboxfort-dev
 Section: libdevel
-Architecture: amd64 arm64 armel armhf i386 hurd-i386 kfreebsd-amd64 kfreebsd-i386 x32
-Depends: ${misc:Depends}, libboxfort (= ${binary:Version}), pkg-config
+Architecture: amd64 arm64 i386
+Depends: ${misc:Depends}, pkg-config
+Breaks: libboxfort (<< 0.0.0-git20200808-ac0507b-1)
+Replaces: libboxfort (<< 0.0.0-git20200808-ac0507b-1)
 Description: development file for BoxFort
  BoxFort provides a simple API to run user code in isolated processes.
  .
