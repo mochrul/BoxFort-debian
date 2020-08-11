@@ -1,7 +1,7 @@
-Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: Criterion
 Upstream-Contact: Franklin "Snaipe" Mathieu <franklinmathieu@gmail.com>
-Source: http://github.com/Snaipe/Criterion
+Source: https://github.com/Snaipe/Criterion
  
 
 Files: *

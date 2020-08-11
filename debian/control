@@ -5,7 +5,9 @@ Maintainer: SZALAY Attila <sasa@debian.org>
 Standards-Version: 4.5.0
 Vcs-Browser: https://github.com/mochrul/BoxFort-debian
 Vcs-Git: https://github.com/mochrul/BoxFort-debian.git
-Build-Depends: debhelper (>= 12),
+HomePage: https://github.com/Snaipe/Criterion
+Rules-Requires-Root: no
+Build-Depends: debhelper-compat (= 12),
                meson,
                python3-cram
 
