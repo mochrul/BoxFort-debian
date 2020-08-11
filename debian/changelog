@@ -1,3 +1,9 @@
+boxfort (0.0.0-git20200808-ac0507b-2) unstable; urgency=medium
+
+  * [55110e0] Fix some lintian suggestion
+
+ -- SZALAY Attila <sasa@debian.org>  Tue, 11 Aug 2020 22:55:56 +0200
+
 boxfort (0.0.0-git20200808-ac0507b-1) unstable; urgency=medium
 
   * [df4b650] New upstream version 0.0.0-git20200808-ac0507b
