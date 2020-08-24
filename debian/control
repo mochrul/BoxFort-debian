@@ -14,6 +14,7 @@ Build-Depends: debhelper-compat (= 12),
 Package: libboxfort-dev
 Section: libdevel
 Architecture: amd64 arm64 i386
+Multi-Arch: same
 Depends: ${misc:Depends}, pkg-config
 Breaks: libboxfort (<< 0.0.0-git20200808-ac0507b-1)
 Replaces: libboxfort (<< 0.0.0-git20200808-ac0507b-1)
