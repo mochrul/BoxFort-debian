@@ -1,3 +1,10 @@
+boxfort (0.0.0-git20200808-ac0507b-3) unstable; urgency=medium
+
+  * [e92206f] Change the copyright file based on license-reconsile suggestions
+  * [ab2fcdf] Add Multi-Arch attribute
+
+ -- SZALAY Attila <sasa@debian.org>  Mon, 24 Aug 2020 17:54:22 +0200
+
 boxfort (0.0.0-git20200808-ac0507b-2) unstable; urgency=medium
 
   * [55110e0] Fix some lintian suggestion
